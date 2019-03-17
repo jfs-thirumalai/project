@@ -1,0 +1,40 @@
+<div class="col-md-6">
+  <h2 class="text-center">Add User</h2>
+  <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="id">Id:</label>
+      <input type="id" formControlName="id" placeholder="id" name="id" class="form-control" id="id">
+    </div>
+    <div class="form-group">
+        <label for="customerCode">customerCode:</label>
+        <input type="customerCode" formControlName="customerCode" placeholder="customerCode" name="customerCode" class="form-control" id="customerCode">
+      </div>
+      <div class="form-group">
+          <label for="customerName">customerName:</label>
+          <input type="customerName" formControlName="customerName" placeholder="customerName" name="customerName" class="form-control" id="customerName">
+        </div>
+        <div class="form-group">
+            <label for="customerAddressPrimary">Primary address:</label>
+            <input type="customerAddressPrimary" formControlName="customerAddressPrimary" placeholder="customerAddressPrimary" name="customerAddressPrimary" class="form-control" id="customerAddressPrimary">
+        </div>
+
+    <div class="form-group">
+      <label for="customerPinCode">PinCode:</label>
+      <input formControlName="customerPinCode" placeholder="customerPinCode" name="customerPinCode" class="form-control" id="customerPinCode">
+    </div>
+
+    <div class="form-group">
+      <label for="customerEmailAddress">Email:</label>
+      <input formControlName="customerEmailAddress" placeholder="customerEmailAddress" name="customerEmailAddress" class="form-control" id="customerEmailAddress">
+    </div>
+    <div class="form-group">
+        <label for="primaryContactPerson">Primary Contact Person:</label>
+        <input formControlName="primaryContactPerson" placeholder="primaryContactPerson" name="primaryContactPerson" class="form-control" id="primaryContactPerson">
+    </div>
+    <div class="form-group">
+        <label for="primaryContactPerson">Primary Contact Person:</label>
+        <input formControlName="primaryContactPerson" placeholder="primaryContactPerson" name="primaryContactPerson" class="form-control" id="primaryContactPerson">
+    </div>
+    <button class="btn btn-success">Create</button>
+  </form>
+</div>

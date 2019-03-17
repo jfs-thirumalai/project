@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-Mar-2019 11:03:59 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.makerchecker.model.CustomerApplication" table="CUSTOMER_APPLICATION">
+        <id name="customerCode" type="java.lang.String">
+            <column name="CUSTOMER_CODE" />
+            <generator class="assigned" />
+        </id>
+        <property name="id" type="long">
+            <column name="APPLICATION_ID" />
+        </property>
+        <property name="customerName" type="java.lang.String">
+            <column name="CUSTOMER_NAME" />
+        </property>
+        <property name="customerAddressPrimary" type="java.lang.String">
+            <column name="CUSTOMER_ADDRESS_PRIMARY" />
+        </property>
+        <property name="customerAddressSecondary" type="java.lang.String">
+            <column name="CUSTOMER_ADDRESS_SECONDARY" />
+        </property>
+        <property name="customerPinCode" type="java.lang.String">
+            <column name="CUSTOMER_PIN_CODE" />
+        </property>
+        <property name="customerEmailAddress" type="java.lang.String">
+            <column name="CUSTOMER_EMAIL_ADDRESS" />
+        </property>
+        <property name="customerPhoneNumber" type="long">
+            <column name="CUSTOMER_PHONE_NUMBER" />
+        </property>
+        <property name="primaryContactPerson" type="java.lang.String">
+            <column name="PRIMARY_CONTACT_PERSON" />
+        </property>
+        <property name="customerStatusCode" type="java.lang.String">
+            <column name="CUSTOMER_STATUS_CODE" />
+        </property>
+        <property name="approverPersonId" type="java.lang.String">
+            <column name="AUTHORIZED_PEROSN" />
+        </property>
+        <property name="approvedTime" type="java.sql.Date">
+            <column name="AUTHORIZED_DATE_TIME" />
+        </property>
+<!--         <property name="approvalStatus" type="java.lang.String">
+            <column name="APPROVALSTATUS" />
+        </property> -->
+        <property name="inactiveInd" type="java.lang.String">
+            <column name="INACTIVE_IND" />
+        </property>
+        <property name="auditUserId" type="java.lang.String">
+            <column name="AUDIT_USER_ID" />
+        </property>
+        <property name="auditStatus" type="int">
+            <column name="AUDIT_STATUS" />
+        </property>
+        <property name="auditReason" type="java.lang.String">
+            <column name="AUDIT_REASON" />
+        </property>
+        <property name="auditEntryDateTime" type="java.sql.Date">
+            <column name="AUDIT_ENTRY_DATETIME" />
+        </property>
+        <property name="auditModifiedDateTime" type="java.sql.Date">
+            <column name="AUDIT_MODIFIED_DATETIME" />
+        </property>
+        <property name="isQueued" type="int">
+        	<column name="IS_QUEUED"></column>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,11 @@
+{
+  "/tstin":{
+    "target": "http://inchxl20cccb580:8181",
+		"secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug",
+    "pathRewrite": {
+      "^/tstin" : ""
+    }
+  }
+}

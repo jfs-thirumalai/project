@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 05-Mar-2019 11:03:59 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.makerchecker.model.User" table="USERS">
+        <id name="userName" type="java.lang.String">
+            <column name="USER_NAME" />
+            <generator class="assigned" />
+        </id>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="firstName" type="java.lang.String">
+            <column name="FIRST_NAME" />
+        </property>
+        <property name="lastName" type="java.lang.String">
+            <column name="LAST_NAME" />
+        </property>
+        <property name="emailAddress" type="java.lang.String">
+            <column name="EMAIL_ADDRESS" />
+        </property>
+        <property name="inactiveInd" type="java.lang.String">
+            <column name="INACTIVE_IND" />
+        </property>
+        <property name="auditUserId" type="java.lang.String">
+            <column name="AUDIT_USER_ID" />
+        </property>
+        <property name="auditStatus" type="int">
+            <column name="AUDIT_STATUS" />
+        </property>
+        <property name="auditReason" type="java.lang.String">
+            <column name="AUDIT_REASON" />
+        </property>
+        <property name="auditEntryDateTime" type="java.sql.Date">
+            <column name="AUDIT_ENTRY_DATETIME" />
+        </property>
+        <property name="auditModifiedDateTime" type="java.sql.Date">
+            <column name="AUDIT_MODIFIED_DATETIME" />
+        </property>
+    </class>
+</hibernate-mapping>
